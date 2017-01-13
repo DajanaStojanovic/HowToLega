@@ -13,6 +13,14 @@ function collapseNavbar() {
     }
 }
 
+$(window).scroll(function(){
+    if ($(window).scrollTop() > 50) {
+        $('#logo').css('visibility','visible');
+    } else {
+        $('#logo').css('visibility','hidden');
+    }
+});
+
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 

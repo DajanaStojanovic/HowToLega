@@ -129,7 +129,6 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -158,6 +157,40 @@ a {
         }
     }
 }
+
+.fullscreen-bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 50%; left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.logo{
+    width:180px;
+    height: auto;
+    padding-top:8px;
+    }
+
+.logo-link{
+    margin:0!important;
+    padding:0!important;
+    background-color:none;
+    &hover{
+        background-color:none;
+    }
+}
+
+
+
 
 .btn-circle {
     width: 70px;
@@ -196,6 +229,11 @@ a {
             -moz-animation-timing-function: linear;
         }
     }
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @-webkit-keyframes pulse {
